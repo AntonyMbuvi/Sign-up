@@ -6,6 +6,75 @@
     <title>Sign up form</title>
 </head>
 <body>
-    
+    <div class="sidebar">
+        <img scr="./downloads/">
+        <img src=".">
+    </div>   
+    <div class="quote">
+        <p>Journey of a thousand miles begins with one step. Pick the right shoes for your journey!</p>
+    </div>
+    <form action="#" method="post">
+
+        <fieldset class="contact_details">
+            <legend>Contact details</legend>
+
+            <div class="name">
+                <label for="first_input">First Name</label>
+                <input id="first_input" type="text" name="first_name" required >
+            </div>
+            <div class="name">
+                <label for="last_input">Last Name</label>
+                <input id="last_input" type="text" name="last_name" >
+            </div>
+            <div class="phone">
+                <label for="phone_input">Last Name</label>
+                <input type="text" id="phone_input" name="phone_number" >
+            </div>
+        </fieldset>
+        
+        <fieldset class="shoe-specs">
+            <legend>Shoe specifications</legend>
+            <div class="size">
+                <label for="size_input">Shoe size UK</label>
+                <input id="size_input" type="number" name="shoe_size" required>
+            </div>
+            <div class="city">
+                <label for="city_input">City for delivery</label>
+                <input id="city_input" type="text" name="city_name" required>
+            </div>
+            <div class="color">
+                <label for="prim_col_input">Pick primary shoe color</label>
+                <input id="prim_col_input" type="color" name="primary_color" required>
+            </div>
+            <div class="color">
+                <label for="sec_col_input">Pick secondary shoe color</label>
+                <input id="sec_col_input" type="color" name="secondary_color" placeholder="optional">
+            </div>
+        </fieldset>
+        
+        <fieldset class="brand">
+            <legend>Pick brand</legend>
+            <div class="brand">
+                <label for="nike_input">NIKE</label>
+                <input id="nike_input" type="radio" name="shoe_brand" value="nike">
+            </div>
+            <div class="brand">
+                <label for="puma_input">PUMA</label>
+                <input id="puma_input" type="radio" name="shoe_brand" value="puma">
+            </div>
+            <div class="brand">
+                <label for="adidas_input">ADIDAS</label>
+                <input id="adidas_input" type="radio" name="shoe_brand" value="adidas">
+            </div>
+            <div class="brand">
+                <label for="vans_input">ADIDAS</label>
+                <input id="vans_input" type="radio" name="shoe_brand" value="vans">
+            </div>
+        </fieldset>
+
+        <button type="submit">SUBMIT</button>
+        <div>Already made the order? <a href="#">check order</a></div>
+
+    </form>
 </body>
 </html>
